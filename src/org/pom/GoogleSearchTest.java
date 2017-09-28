@@ -1,5 +1,6 @@
 package org.pom;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,7 +25,10 @@ public class GoogleSearchTest {
 		GoogleHomePageObjects page = new GoogleHomePageObjects(driver);
 		
 		page.txtSearch.sendKeys("Rodrigo Magalhães");
-		page.btnSearch.click();
+		
+		//page.btnSearch.click();
+		
+		page.txtSearch.sendKeys(Keys.ENTER);
 		
 		driver.close();
 	}
