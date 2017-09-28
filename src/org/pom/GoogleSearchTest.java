@@ -24,7 +24,7 @@ public class GoogleSearchTest {
 		
 		GoogleHomePageObjects page = new GoogleHomePageObjects(driver);
 		
-		page.txtSearch.sendKeys("Rodrigo Magalhães");
+		page.txtSearch.sendKeys("Rodrigo Magalhães ");
 		
 		//page.btnSearch.click();
 		
