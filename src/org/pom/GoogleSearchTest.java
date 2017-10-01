@@ -44,7 +44,7 @@ public class GoogleSearchTest {
 			long start = System.currentTimeMillis();
 			
 			// seta a url
-			driver.navigate().to(line);			
+			driver.navigate().to(line.substring(Math.addExact(line.indexOf("="), 1)));			
 			
 			long finish = System.currentTimeMillis();
 			
@@ -61,7 +61,7 @@ public class GoogleSearchTest {
 			checkPageIsReady();
 
 			// seta o valor a ser pesquisado no campo de pesquisa do google
-			page.txtSearch.sendKeys(line);
+			page.txtSearch.sendKeys(line.substring(Math.addExact(line.indexOf("="), 1)));
 
 			// page.btnSearch.click();
 
